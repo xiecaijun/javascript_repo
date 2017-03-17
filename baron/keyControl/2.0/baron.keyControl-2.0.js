@@ -10,7 +10,7 @@
  * 
  * 
  * 注册事件
-<script type="text/javascript" src="baron.keyControl-2.0.js"></script>
+<script type="text/javascript" src="keyControl.js"></script>
 <script>
   
 	baronkey.up.uptest=function(){
@@ -239,13 +239,7 @@ function grabEvent(e) {
         		baronkey.goback.init();
         	}
             break;
-		case KEY_RETURN_2:  		
-			if(map["goback"]!=null){
-        		 callback_key_return_map[map["goback"]](); //兼容TVOS
-        	}else{
-        		baronkey.goback.init();
-        	}
-            break;			
+ 		
 	    case KEY_ENTER:      
             if(map["enter"]!=null){
         		 callback_key_enter_map[map["enter"]]();

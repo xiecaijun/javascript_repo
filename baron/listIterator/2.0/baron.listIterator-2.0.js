@@ -8,8 +8,8 @@
  * 
  * (一)本js依赖keyControl.js以及jquery.mini.js,必须按以下顺序导入js文件
  * <script language="javascript" src="js/jquery.min.js"></script>
- * <script language="javascript" src="js/baron.keyControl-2.0.js"></script>	
- * <script language="javascript" src="js/baron.listIterator-2.0.js"></script>	
+ * <script language="javascript" src="js/keyControl.js"></script>	
+ * <script language="javascript" src="js/listIterator.js"></script>	
  * 
  * (二)html中注册事件baronIterateList，该事件是内置的，version 2.0版本中系统自动生成，名字不能更改，不可人工覆盖
  * 
@@ -84,7 +84,7 @@ ListIterator_OBJ.prototype.leftOrUp = function(){
 		var first =  Number(_inst.offset) ;
 		var last = Number(_inst.offset)+Number(_inst.width-1);
 		var activeId = document.activeElement.id;
-		var baronlist_Id=$("#"+activeId).attr("baronlist_Id");		
+		var baronlist_Id = document.activeElement.getAttribute("baronlist_Id");
 	  	if(baronlist_Id==first&&baronlist_Id!=0){     
 		     _inst.offset = Number(_inst.offset)-Number(1);
 		     _inst.iterate();
@@ -93,12 +93,12 @@ ListIterator_OBJ.prototype.leftOrUp = function(){
 } ;
 
 ListIterator_OBJ.prototype.rightOrDown = function(){
+
 	        var _inst = ListIterator_OBJ.inst;
 	    	var vedioListLen = $("#"+_inst.ul_id).children().size();
 			var first =  Number(_inst.offset) ;
 		    var last = Number(_inst.offset)+Number(_inst.width-1);
-		    var activeId = document.activeElement.id;
-		    var baronlist_Id=$("#"+activeId).attr("baronlist_Id");		
+		    var baronlist_Id = document.activeElement.getAttribute("baronlist_Id");
 		  	if(baronlist_Id==last){     
 			     _inst.offset = Number(_inst.offset)+ Number(1);
 			     _inst.iterate();
