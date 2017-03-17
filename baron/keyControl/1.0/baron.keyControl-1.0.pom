@@ -1,0 +1,10 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>baron</groupId>
+  <artifactId>keyControl</artifactId>
+  <version>1.0</version>
+  <packaging>js</packaging>
+
+  <name>keyControl</name>
+  <description>key control</description>
+</project>
