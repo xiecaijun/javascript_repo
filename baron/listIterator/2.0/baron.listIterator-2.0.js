@@ -8,8 +8,8 @@
  * 
  * (一)本js依赖keyControl.js以及jquery.mini.js,必须按以下顺序导入js文件
  * <script language="javascript" src="js/jquery.min.js"></script>
- * <script language="javascript" src="js/keyControl.js"></script>	
- * <script language="javascript" src="js/listIterator.js"></script>	
+ * <script language="javascript" src="js/baron.keyControl-2.0"></script>	
+ * <script language="javascript" src="js/baron.listIterator-2.0"></script>	
  * 
  * (二)html中注册事件baronIterateList，该事件是内置的，version 2.0版本中系统自动生成，名字不能更改，不可人工覆盖
  * 

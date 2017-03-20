@@ -125,7 +125,8 @@ baronkey.exit.init = function(){
 
 function grabEvent(e) {
 	var activeElementAction = document.activeElement.getAttribute("baronkeyCallback");
-	var key_action = activeElementAction.split("*");
+	var key_action ={};
+	if(activeElementAction!=null)key_action = activeElementAction.split("*");
 	var key="";
 	var action="";	
 	var map = {};
