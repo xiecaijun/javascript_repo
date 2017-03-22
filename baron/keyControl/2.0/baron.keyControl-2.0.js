@@ -3,8 +3,8 @@
  * 
  * <body>
  * <div>
- * <a id="test1" title="up_uptest1*down_downtest1*right_righttest1*left_lefttest1" href="http://www.baidu.com"> 56543654 </a>
- * <a id="test" title="up_uptest*down_downtest*right_righttest*left_lefttest" href="http://www.baidu.com"> hfdjsahfkjdsa </a>
+ * <a id="test1" baronkeyCallback="up_uptest1*down_downtest1*right_righttest1*left_lefttest1" href="http://www.baidu.com"> 56543654 </a>
+ * <a id="test" baronkeyCallback="up_uptest*down_downtest*right_righttest*left_lefttest" href="http://www.baidu.com"> hfdjsahfkjdsa </a>
  * </div>
  * </body>
  * 
